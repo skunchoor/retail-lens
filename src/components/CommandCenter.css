@@ -1,0 +1,43 @@
+.command-center {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  height: calc(100vh - 180px);
+  padding: 1.5rem;
+}
+
+.camera-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.side-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+  min-height: 0;
+}
+
+.panel-section {
+  flex: 1;
+  min-height: 0; /* Important for flex children to scroll */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .command-center {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  
+  .camera-grid {
+    height: 60vh;
+  }
+  
+  .side-panel {
+    height: 80vh;
+  }
+}

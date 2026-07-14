@@ -1,0 +1,38 @@
+.inventory-container {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 1.5rem;
+  height: calc(100vh - 180px);
+  padding: 1.5rem;
+}
+
+.inventory-map-pane {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background: rgba(9, 9, 11, 0.8);
+  overflow: hidden;
+}
+
+.inventory-table-pane {
+  display: flex;
+  flex-direction: column;
+  background: rgba(9, 9, 11, 0.8);
+  overflow: hidden;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .inventory-container {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  
+  .inventory-map-pane {
+    height: 50vh;
+  }
+  
+  .inventory-table-pane {
+    height: 70vh;
+  }
+}
