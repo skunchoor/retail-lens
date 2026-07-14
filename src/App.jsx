@@ -24,7 +24,7 @@ const INITIAL_CAMERAS = [
     id: 'cam2',
     name: 'Aisle 2 - Snacks',
     location: 'Central',
-    imageUrl: 'https://images.unsplash.com/photo-1587596041162-4318c50c184c?auto=format&fit=crop&q=80&w=800',
+    imageUrl: 'https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&q=80&w=800',
     detections: [
       { id: 'd4', type: 'success', x: 5, y: 20, width: 40, height: 60, label: 'Chips (Stocked)' },
       { id: 'd5', type: 'warning', x: 50, y: 20, width: 40, height: 60, label: 'Price Mismatch', isPulsing: true }
